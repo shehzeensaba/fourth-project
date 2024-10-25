@@ -1,0 +1,1988 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nature Website</title>
+    <link rel="icon" type="image/icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight:bold;
+  font-size: large;
+  font-style: normal;
+} 
+.bgImage{
+            position: relative;
+            bottom: 73px;
+            width: 100%;
+            height:100vh;
+            background-image: url(nav10.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            animation: bgChange 20s linear infinite;
+            margin-bottom: 30px;
+            
+        }
+        @keyframes bgChange{
+            0%{
+                background-image: url(nav3.jpg);
+            }
+            20%{
+                background-image: url(nav11.jpg);
+            }
+            25%{
+                background-image: url(nav6.jpg);
+            }
+            0%{
+                background-image: url(tree5.jpg);
+            }
+            50%{
+                background-image: url(save.jpg);
+            }
+            70%{
+                background-image: url(nav9.jpg);
+            }
+        }
+        .overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            background-color:rgba(0,0,0,0.3) ;
+        }
+
+        .content{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 2;
+        }
+        .content h1{
+            font-size: 60px;
+            margin-bottom: 0px;
+        }
+        .content h1 span{
+           color: #00bf13;
+        }
+        .content p{
+       font-size: 21px;
+       width: 60%;
+       padding-bottom: 10px;
+     text-align: center;
+        }
+
+        .content  button{
+          color:white;
+          border: none;
+          outline: none;
+          font-size:18px ;
+          background-color:#00bf13 ;
+          padding: 14px 22px;
+          text-transform:uppercase ;
+          border-radius: 25px;
+          transition:.5s ;
+          width: 20%;
+        }
+      .content button:hover{
+        background-color: #01770d;
+      }
+
+
+
+   
+
+/* .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-gap: 10px;
+    justify-content: center;
+} */
+
+/* .grid-item {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+} */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:40px;
+    justify-content: center;
+    margin-bottom: 100px;
+     width: 80%;
+     margin: auto ;
+}
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    /* width: 234px;
+    height: 234px; */
+    border: 4px solid green;
+}
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-family: fangsong;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #2188219c;
+    color: #fff;
+    font-size: 16px;
+     /* padding: 25px;  */
+    transition: transform 0.5s ease-in-out;
+}
+/* .grid-item:hover img {
+    transform: translateX(-100%);
+} */
+.text-overlay p{
+    padding:28px;
+}
+.grid-item:hover .text-overlay {
+    transform: translateX(-100%);
+}
+
+
+
+.heading {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+ color: #0d6333;
+}
+
+
+
+.img {
+      display: grid;
+      place-items: center;
+      margin:auto;
+      width: 80%;
+    }
+
+    .grid-main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      /* width: 100%; */
+      /* max-width: 1200px; */
+      padding: 20px;
+      margin-bottom: 10px;
+      /* width: 80%;
+      margin: auto; */
+    }
+
+    .card {
+    background-image: url(https://img.freepik.com/free-photo/scuba-diver-surrounded-by-beautiful-underwater-nature_23-2151443725.jpg?ga=GA1.2.1639133888.1710839055&semt=ais_hybrid);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      /* position: relative; */
+      cursor: pointer;
+      object-fit: cover;
+      background-size: cover;
+    }
+
+     
+    .card2 {
+      background-image: url(https://img.freepik.com/premium-photo/painting-sunset-with-sun-shining-through-clouds_782516-21676.jpg?w=360);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      /* position: relative; */
+      cursor: pointer;
+      object-fit: cover;
+      background-size: cover;
+    }
+    .card3{
+      background-image:url(tree3.jpg);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      /* position: relative; */
+      cursor: pointer;
+      object-fit: cover;
+      background-size: cover;
+    }
+    .card4{
+      background-image:url(https://img.freepik.com/free-photo/breathtaking-view-natural-beach-landscape_23-2151683054.jpg?ga=GA1.2.1639133888.1710839055&semt=ais_hybrid);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      /* position: relative; */
+      cursor: pointer;
+      background-size: cover;
+      object-fit: cover;
+    }
+    
+    .card5{
+      background-image:url(tree1.jpg);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      /* position: relative; */
+      cursor: pointer;
+      background-size: cover;
+      object-fit: cover;
+    }
+    .card6{
+      background-image:url(https://img.freepik.com/free-photo/beautiful-aerial-shot-rocky-coast-ocean-waves_181624-190.jpg?ga=GA1.1.1639133888.1710839055&semt=ais_hybrid);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      /* position: relative; */
+      cursor: pointer;
+      object-fit: cover;
+      background-size: cover;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .card2:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .card3:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    .card4:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    .card5:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    .card6:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-class {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .card-header {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .card2-header {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .card3-header {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .card4-header {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .card4-header {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .card6-header {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .card-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+      opacity: 0;
+      background: #f9f9f9;
+      padding: 0 20px;
+      box-sizing: border-box;
+
+    }
+    .auto h2{
+        display: grid;
+        justify-content: center;
+    }
+    .card-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+      opacity: 0;
+      background: #f9f9f9;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    .card2-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+      opacity: 0;
+      background: #f9f9f9;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    .card3-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+      opacity: 0;
+      background: #f9f9f9;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    .card4-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+      opacity: 0;
+      background: #f9f9f9;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    .card5-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+      opacity: 0;
+      background: #f9f9f9;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    .card6-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+      opacity: 0;
+      background: #f9f9f9;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    .card.active .card-details {
+      max-height: 200px;
+      opacity: 1;
+      padding: 20px;
+      font-family:monospace;
+    }
+    .card2.active .card-details {
+      max-height: 200px;
+      opacity: 1;
+      padding: 20px;
+      font-family: monospace;
+    }
+    .card3.active .card-details {
+      max-height: 200px;
+      opacity: 1;
+      padding: 20px;
+      font-family:monospace;
+    }
+    .card4.active .card-details {
+      max-height: 200px;
+      opacity: 1;
+      padding: 20px;
+      font-family:monospace;
+    }
+    
+    .card5.active .card-details {
+      max-height: 200px;
+      opacity: 1;
+      padding: 20px;
+      font-family:monospace;
+    }
+    .card6.active .card-details {
+      max-height: 200px;
+      opacity: 1;
+      padding: 20px;
+      font-family:monospace;
+    }
+    
+
+
+    .auto-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0;
+            width: 80%;
+            margin: 0 auto;
+            /* background-color: #f5f5f5; */
+            /* border: 3px solid green; */
+        }
+
+        .grid-text {
+            padding: 40px;
+            /* background-color: #ffffff; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .grid-text img {
+            height: 425px;
+            display: block;
+            box-shadow: 10px 10px 20px gray;
+            width: 100%;
+          }
+          .grid-text  :hover{
+         transform: scale(0.95);
+        }
+        .grid-text h2 {
+            font-size: 30px;
+            color:green;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .grid-text p {
+            font-size: 22px;
+            color: #333333;
+            font-family: cursive;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            
+        }
+
+        .grid-text a {
+            color: #008C44;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .grid-text a:hover {
+            text-decoration: underline;
+        }
+
+
+     .logo span{
+        color: white;
+     }
+
+
+    .book{
+            min-height: 124vh;
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+        }
+        .left-text{
+            flex-basis: 30%;
+        }
+        .gallery{
+            flex-basis: 50%;
+            display: grid;
+            gap: 8px;
+            grid-template-columns: repeat(3,1fr);
+            grid-auto-rows:200px;
+        }
+        .box{
+            background-size: cover;
+            background-position: top;
+            color: white;
+            display: flex;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+            background-blend-mode: hard-light;
+            transition: all 1s ease-in-out;
+        }
+        .box:hover{
+            background-color: #999;
+            background-position: center;
+            box-shadow: 0 0 4px #fff;
+        }
+        .be-1{
+            grid-column: span 3;
+        }
+        .row-2{
+            grid-column: span 2;
+        }
+        .header{
+            font-size: 3rem;
+            color:#0d6333;
+            text-align: center;
+
+        }
+        .subheading{
+            color:black;
+            margin-top: 10px;
+            text-align: center;
+            font-family:cursive;
+            font-weight: 900;
+
+        }
+
+
+  
+.white {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    width: 80%;
+    margin: auto;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    width: 100%;
+    /* border:4px solid #045d2b; */
+    /* background-color: #8be38b8f; */
+    justify-content: center;
+    border-radius: 8px;
+    padding: 20px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 5.5); */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h1 {
+    margin-bottom: 20px;
+    color:#0d6333;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid green;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    margin-top: 3px;
+    padding: 10px 15px;
+    background-color: #27ae60;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #1e874c;
+}
+
+.video-section video {
+    width: 633px;;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 3.1);
+}
+
+
+.footer {
+    /* background-color: #045d2b; */
+    background-color: #045d2beb;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: x-large;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.footer-item {
+    padding: 10px;
+}
+
+.footer-item h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.footer-item p {
+    margin: 5px 0;
+}
+
+.footer-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-item a:hover {
+    text-decoration: underline;
+}
+
+.footer-item form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.footer-item button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.footer-item button:hover {
+    background-color: #777;
+}
+
+
+header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+         background: #f1e4e438; 
+        background-color: rgba(255, 255, 255, .19);
+        backdrop-filter: blur(3px);
+    }
+
+    .container {
+    margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+    .nav_checkbox {
+        display: grid;
+        grid-template-columns: 0fr;
+        align-items: center;
+        background: #0d6333;
+    }
+
+    .logo {
+        text-decoration: none;
+        color: white;
+        padding-left: 25px;
+    }
+
+    .logo h1 {
+        font-family: math;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .tab-nav {
+        outline: none;
+        display: none;
+    }
+
+    .label {
+        display: none;
+        color:white;
+    }
+
+    .burger {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin-top: 5px;
+    }
+
+    .content_nav {
+        grid-column: 6;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content_nav li {
+        display: inline-block;
+        /* padding: 0px 10px; */
+        padding: 5px;
+    }
+
+    .content_nav li a {
+        text-decoration: none;
+        font-size:22px;
+        font-weight: bold;
+        color: white;
+        position: relative;
+    }
+    .content_nav li:hover{
+        background-color: green;
+        border-radius: 5px;
+    }
+    .nature {
+             width: 80%;
+            margin:auto;
+            padding: 20px;
+        }
+
+         .nature h1 {
+            text-align: center;
+            color:#0d6333;
+            font-size: 2.5em;
+        }
+
+        .grid-margin {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .grid-top {
+      background-color: white;
+      border-radius: 10px;
+       padding: 20px;
+       display: flex;
+       align-items: center;
+       border-bottom: 4px solid #0d6333; 
+       box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        }
+        /* .grid-top:hover{
+            transform: scale(0.95);
+        } */
+
+        .grid-top img {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+        }
+
+        .grid-top h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color:green;
+            font-family: system-ui;
+        }
+
+       
+        .grid-top p {
+    margin: 5px 0 0;
+    font-size: 15px;
+    color: #000000de;
+    font-family: cursive;
+}
+.my_blog{
+background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://img.freepik.com/free-photo/flat-lay-composition-leaves-with-copy-space_23-2148831201.jpg?ga=GA1.1.1639133888.1710839055&semt=ais_hybrid");
+}
+        .image-card {
+            /* max-width: 1200px; */
+            margin:auto;
+            padding: 20px;
+            width: 80%;
+        }
+
+        .grid-right{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .top {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .top img {
+            width: 100%;
+            height:40vh;
+            background-size: cover;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .top:hover {
+            transform: scale(1.05);
+        }
+
+
+@media screen and (max-width: 1280px) {
+        .container {
+            width: 100%;
+            height: 1px;
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        .label {
+            display: grid;
+            cursor: pointer;
+            grid-column: 30;
+            padding-right: 10px;
+        }
+
+        .content_nav {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-column: 1/4;
+            text-align: center;
+            max-height: 0;
+            overflow: hidden;
+            transition: all ease-in-out 0.6s;
+        }
+
+        .nav_checkbox input:checked~.content_nav {
+            max-height: 500px;
+        }
+
+        .content_nav li {
+            padding: 15px 10px;
+            text-align: start;
+
+
+        }
+    }
+@media only screen and (max-width:1024px){
+    .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 100px; */
+    margin: 0 auto;
+}
+}
+
+ @media only screen and (min-width:769px) and (max-width:999px){
+    .book {
+    flex-direction: column;
+    grid-auto-rows: 20px;
+    width: 673px;
+}
+
+.gallery{
+    width:100% ;
+    /* padding: 12px; */
+
+}
+.box {
+    /* grid-row: span 1; */
+    grid-column: span 0;
+    /* width: 288px; */
+}
+.grid-margin {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+.grid-right {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+.video-grid {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    width: 100%;
+}
+.video-section video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 3.1);
+}
+.top img {
+    width: 100%;
+    height: 29vh;
+}
+.content_nav li a {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+.bgImage{
+    bottom: unset;
+}
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   place-items: center;
+    
+}
+.nav_checkbox {
+    background: #0d6333;
+}
+.content p {
+    font-size: 20px;
+}
+.grid {
+   
+   grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8,375px);
+}
+.grid-main {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+.navbar{
+    display: none;
+}
+.gallery{
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.content h1 {
+    font-size: 60px;
+    display: grid;
+}
+.content button:hover {
+    width: 200px;
+}
+.content button{
+    width: 200px;
+}
+.auto-container {
+    grid-template-columns: repeat(1, 1fr);
+}
+.footer-grid {
+    font-size:28px;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.subheading {
+    font-size: large;
+}
+.card-header {
+    font-size: 30px;
+    font-weight: bold;
+}
+.auto-content p {
+    margin: 1px 0 0;
+    font-size: 15px;
+}
+.heading {
+    font-size:30px;
+    text-align: center;
+}
+.footer {
+    background-color:#045d2beb;
+    color: #fff;
+}
+.auto {
+    width: 337px;
+}
+.grid-text p {
+    font-size:21px;
+    color: #333333;
+    font-family: cursive;
+    width: 100%;
+}
+.row-2 {
+    grid-column: unset;
+}
+.content_nav {
+    grid-template-columns: 1fr;
+    grid-column: 13/12;
+}
+.grid-item {
+    width: 280px;
+    height: 280px;
+    border: 4px solid green;
+}
+}
+
+@media only screen and (max-width:768px){
+.book {
+    flex-direction: column;
+    grid-auto-rows: 20px;
+    width: 673px;
+}
+
+.gallery{
+    width:100% ;
+    /* padding: 12px; */
+
+}
+.box {
+    /* grid-row: span 1; */
+    grid-column: span 0;
+    /* width: 288px; */
+}
+.grid-margin {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+.content_nav li a {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+.content_nav {
+    grid-template-columns: 1fr;
+    grid-column: 13/12;
+}
+.grid-right {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+.video-grid {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    width: 100%;
+}
+.video-section video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 3.1);
+}
+.top img {
+    width: 100%;
+    height: 29vh;
+}
+.bgImage{
+    bottom: unset;
+}
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   place-items: center;
+    
+}
+
+.nav_checkbox {
+    background: #045d2b8a;
+}
+.content p {
+    font-size: 29px;
+}
+.grid {
+   
+   grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8,375px);
+}
+.grid-main {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+.navbar{
+    display: none;
+}
+.gallery{
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.grid-text p {
+    font-size: 13px;
+    color: #333333;
+    font-family: cursive;
+    width: 255px;
+}
+.content h1 {
+    font-size: 60px;
+    display: grid;
+}
+.content button:hover {
+    width: 200px;
+}
+.content button{
+    width: 200px;
+}
+.auto-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+.footer-grid {
+    font-size:28px;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.auto-container {
+    width: 87%;
+    margin: auto;
+}
+.subheading {
+    font-size: large;
+}
+.card-header {
+    font-size: 30px;
+    font-weight: bold;
+}
+.auto-content p {
+    margin: 1px 0 0;
+    font-size: 15px;
+}
+.heading {
+    font-size:30px;
+    text-align: center;
+}
+.footer {
+    background-color:#045d2beb;
+    color: #fff;
+}
+.auto {
+    width: 337px;
+}
+/* .grid-text img {
+    height: 393px;
+    display: block;
+    box-shadow: 10px 10px 20px gray;
+    width: 290px;
+} */
+.grid-text img {
+    height: 360px;
+    display: block;
+    box-shadow: 10px 10px 20px gray;
+    width: 263px;
+}
+.row-2 {
+    grid-column: unset;
+}
+.grid-item {
+    width: 280px;
+    height: 280px;
+    border: 4px solid green;
+}
+}
+
+
+    @media only screen and (min-width:536px) and (max-width:765px){
+        .book{
+    flex-direction: column;
+    grid-auto-rows: 20px;
+    width: 318px;
+}
+
+.gallery{
+    width:100% ;
+}
+.box {
+    grid-column: span 0;
+}
+.grid-margin {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+.grid-right {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+.video-grid {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    width: 280px;
+}
+.video-section video {
+    width: 315px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 3.1);
+}
+
+.bgImage{
+    bottom: unset;
+}
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   place-items: center;
+    
+}
+.grid-text h2 {
+    font-size: 28px;
+}
+.nav_checkbox {
+    background: #0d6333;
+}
+.content p {
+    font-size: 15px;
+}
+.grid {
+   grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8,375px);
+}
+.grid-main {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+}
+.navbar{
+    display: none;
+}
+.gallery{
+    grid-template-columns: repeat(1, 1fr);
+
+}
+.grid-text img {
+    height: 276px;
+    display: block;
+    box-shadow: 10px 10px 20px gray;
+    width: 100%;
+}
+.content h1 {
+    font-size: 60px;
+    display: grid;
+}
+.content button:hover {
+    width: 200px;
+}
+.content button{
+    width: 200px;
+}
+.auto-container {
+    grid-template-columns: repeat(1, 1fr);
+}
+.footer-grid {
+    font-size:25px;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+.subheading {
+    font-size:13px;
+}
+.card-header {
+    font-size: 30px;
+    font-weight: bold;
+}
+.auto-content p {
+    margin: 1px 0 0;
+    font-size: 15px;
+}
+.heading {
+    font-size:21px;
+    text-align: center;
+}
+.footer {
+    background-color:#045d2beb;
+    color: #fff;
+}
+.auto {
+    width: 337px;
+}
+.grid-text p {
+    font-size: 12px;
+    color: #333333;
+    font-family: cursive;
+    width: 100%;
+}
+.row-2 {
+    grid-column: unset;
+}
+.content_nav {
+    grid-template-columns: 1fr;
+    grid-column: 1/31;
+    place-items: center;
+}
+.nature h1 {
+    text-align: center;
+    color: #0d6333;
+    font-size: 37px;
+}
+.white {
+    min-height: 80vh;
+}
+}
+
+
+
+     @media only screen and (min-width:375px) and (max-width:555px){
+
+        .book{
+    flex-direction: column;
+    grid-auto-rows: 20px;
+    width: 318px;
+}
+
+.gallery{
+    width:100% ;
+}
+.box {
+    grid-column: span 0;
+}
+.grid-margin {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+.grid-right {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+.video-grid {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    width: 280px;
+}
+.video-section video {
+    width: 315px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 3.1);
+}
+
+.bgImage{
+    bottom: unset;
+}
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   place-items: center;
+    
+}
+.grid-text h2 {
+    font-size: 28px;
+}
+.nav_checkbox {
+    background: #0d6333;
+}
+.content p {
+    font-size: 15px;
+}
+.grid {
+   grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8,375px);
+}
+.grid-main {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+}
+.navbar{
+    display: none;
+}
+.gallery{
+    grid-template-columns: repeat(1, 1fr);
+
+}
+.grid-text img {
+    height: 276px;
+    display: block;
+    box-shadow: 10px 10px 20px gray;
+    width: 100%;
+}
+.content h1 {
+    font-size: 60px;
+    display: grid;
+}
+.content button:hover {
+    width: 200px;
+}
+.content button{
+    width: 200px;
+}
+.auto-container {
+    grid-template-columns: repeat(1, 1fr);
+}
+.footer-grid {
+    font-size:25px;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+.subheading {
+    font-size:13px;
+}
+.card-header {
+    font-size: 30px;
+    font-weight: bold;
+}
+.auto-content p {
+    margin: 1px 0 0;
+    font-size: 15px;
+}
+.heading {
+    font-size:21px;
+    text-align: center;
+}
+.footer {
+    background-color:#045d2beb;
+    color: #fff;
+}
+.auto {
+    width: 337px;
+}
+.grid-text p {
+    font-size: 12px;
+    color: #333333;
+    font-family: cursive;
+    width: 100%;
+}
+.row-2 {
+    grid-column: unset;
+}
+.content_nav {
+    grid-template-columns: 1fr;
+    grid-column: 1/31;
+    place-items: center;
+}
+.nature h1 {
+    text-align: center;
+    color: #0d6333;
+    font-size: 37px;
+}
+.white {
+    min-height: 80vh;
+}
+}
+
+@media only screen and (max-width:375px){
+
+.book{
+    flex-direction: column;
+    grid-auto-rows: 20px;
+    width: 318px;
+}
+
+.gallery{
+    width:100% ;
+    /* padding: 12px; */
+
+}
+.box {
+    /* grid-row: span 1; */
+    grid-column: span 0;
+    /* width: 288px; */
+}
+.grid-margin {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+.grid-right {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+.video-grid {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    width: 280px;
+}
+.video-section video {
+    width: 315px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 3.1);
+}
+
+.bgImage{
+    bottom: unset;
+}
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   place-items: center;
+    
+}
+.grid-text h2 {
+    font-size: 28px;
+}
+.nav_checkbox {
+    background: #0d6333;
+}
+.content p {
+    font-size: 15px;
+}
+.grid {
+   
+   grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8,375px);
+}
+.grid-main {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+}
+.navbar{
+    display: none;
+}
+.gallery{
+    grid-template-columns: repeat(1, 1fr);
+
+}
+.grid-text img {
+    height: 276px;
+    display: block;
+    box-shadow: 10px 10px 20px gray;
+    width: 100%;
+}
+.content h1 {
+    font-size: 60px;
+    display: grid;
+}
+.content button:hover {
+    width: 200px;
+}
+.content button{
+    width: 200px;
+}
+.auto-container {
+    grid-template-columns: repeat(1, 1fr);
+}
+.footer-grid {
+    font-size:25px;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+.subheading {
+    font-size: large;
+}
+.card-header {
+    font-size: 30px;
+    font-weight: bold;
+}
+.auto-content p {
+    margin: 1px 0 0;
+    font-size: 15px;
+}
+.heading {
+    font-size:21px;
+    text-align: center;
+}
+.footer {
+    background-color:#045d2beb;
+    color: #fff;
+}
+.auto {
+    width: 337px;
+}
+.grid-text p {
+    font-size: 12px;
+    color: #333333;
+    font-family: cursive;
+    width: 100%;
+}
+.row-2 {
+    grid-column: unset;
+}
+.content_nav {
+    grid-template-columns: 1fr;
+    grid-column: 1/31;
+    place-items: center;
+}
+.nature h1 {
+    text-align: center;
+    color: #0d6333;
+    font-size: 36px;
+}
+.white {
+    min-height: 80vh;
+}
+}
+
+    </style>
+  </head>
+  <body>
+        <div class="container">
+            <nav class="nav_checkbox">
+               <div class="logo">
+                    <h1><i class="fa-solid fa-earth-americas" style="color: #07d530;">&nbsp<span>NATURE</span></i></h1>
+                </div>
+                <input type="checkbox" id="tab-nav" class="tab-nav">
+                <label for="tab-nav" class="label">
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                </label>
+                <ul class="content_nav">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Pages">Pages</a></li>
+                    <li><a href="#Portfolios">Portfolios</a></li>
+                    <li><a href="#Galleries">Galleries</a></li>
+                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    
+    <div class="bgImage" id="Home">
+        <div class="overlay"></div>
+<div class="content">
+    <h1> wonderful <span>nature</span></h1>
+    <p>Nature is the world's greatest gift to humankind. It surrounds us with an endless array of landscapes, from towering mountains and dense forests to serene lakes and expansive deserts. The beauty of nature is not just in its appearance but also in its sounds, scents, and sensations, all of which contribute to a sense of peace and tranquility.
+    </p>
+<button>explore Now</button>
+</div>
+ </div>
+
+
+    <div class="heading">
+        <h1> Wild With Nature</h1>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="pho.jpg" alt="Image 1">
+            <div class="text-overlay"><p>The heart of nature is the expression of love and commitment.</p></div>
+        </div>
+        <div class="grid-item">
+          <img src="fox.jpg" alt="Image 3">
+            <div class="text-overlay"> <p>A lot of animal species exist in both, land and water. As a result, each of them has a purpose for their existence.</p></div>
+        </div>
+        <div class="grid-item">
+            <img src="tiger.jpg" alt="Image 3">
+            <div class="text-overlay"><p>Animals are the most adorable and loving creatures existing on Earth. They might not be able to speak.</p></div>
+        </div>
+        <div class="grid-item">
+            <img src="chita.jpg" alt="Image 4">
+            <div class="text-overlay"><p> Wild animals provide various useful substances and animal products such as honey, leather, ivory,etc..</p></div>
+        </div>
+        <div class="grid-item">
+            <img src="lion.jpg" alt="Image 2">
+            <div class="text-overlay"> <p>Nature and wildlife are largely associated with humans for several reasons, such as emotional andemotional and social issues.</p></div>
+        </div> 
+        <div class="grid-item">
+            <img src="elephant.jpg" alt="Image 2">
+            <div class="text-overlay"><p>Human life largely depends on wild animals for elementary requirements like the medicines we consume and  clothes we wear daily.</p>
+            </div>
+        </div>
+         <div class="grid-item">
+            <img src="photo.jpg" alt="Image 2">
+            <div class="text-overlay"><p>As a child raised in a city, I never had first-hand experience with animals. Though people domesticate animals, I was always afraid of them.</p></div>
+        </div>
+         <div class="grid-item">
+            <img src="bear.jpg" alt="Image 2">
+            <div class="text-overlay"><p>This led me to love the animals and look at them from a different perspective, not with a fearful heart.</p> </div>
+        </div>
+    </div>
+
+
+
+    <div class="book"id="Portfolios">
+        <div class="left-text">
+            <h2 class="header">My Portfolios</h2>
+            <p class="subheading ">Photography always deals with existing objects and because of that, it will always have a story, also known as content. It's the intangible part of photography, </p>
+        </div>
+      <div class="gallery">
+        <div class="box row-2" id="be-1"style="background-image: url(nature..avif);">photo</div>
+        <div class="box" style="background-image: url(nav7.jpg);">photo</div> 
+        <div class="box" style="background-image: url(nav9.jpg);">photo</div>
+        <div class="box" style="background-image: url(nav3.jpg);">photo</div>
+        <div class="box" style="background-image: url(nav6.jpg);">photo</div>
+        <div class="box" style="background-image: url(image1.jpg);">photo</div>
+        <div class="box row-2"id="be-1" style="background-image: url(nav10.jpg);">photo</div>
+        <div class="box" style="background-image: url(nav12.jpg);">photo</div>
+        <div class="box  row-2"id="be-1" style="background-image: url(image8.jpg);">photo</div>
+        <div class="box" style="background-image: url(image6.jpg);">photo</div>
+        <div class="box " style="background-image: url(image10.jpg);">photo</div>
+        <div class="box " style="background-image: url(image5.jpg);">photo</div>
+
+
+      </div>
+    </div>     
+    <div class="heading" >
+        <h1>My Blog </h1>
+    </div>
+ <section class="my_blog">
+
+    <div class="auto-container" id="Blog">
+    <div class="grid-text">
+        <h2> maldives Waterfall</h2>
+        <p>Landscapes are dynamic, constantly changing with the seasons, weather, and even the time of day. The morning light may cast a soft, golden hue over a meadow, while the same scene under a stormy sky can be dramatic and intense. This ever-changing nature makes landscapes a source of endless fascination for artists, photographers, and nature lovers alike.</p>
+        <a href="#">READ MORE</a>
+    </div>
+    <div class="grid-text">
+        <img src="img.jpg" alt="Marsh Image">
+    </div>
+
+    <div class="grid-text">
+        <img src="rock2.jpg" alt="Bird’s Head Image">
+    </div>
+    <div class="grid-text">
+        <h2>Rock land</h1>
+        <p>Rocks are the silent witnesses of Earth’s history, embodying the essence of time and the forces that have shaped our planet. From the towering granite peaks of mountains to the smooth pebbles on a riverbed, rocks tell a story that spans billions of years, offering a glimpse into the Earth’s past and the processes that continue to mold it.</p>
+        <a href="#">READ MORE</a>
+    </div>
+
+    <div class="grid-text">
+        <h2>Save the Forests</h2>
+        <p>Saving forests is one of the most critical challenges of our time, for these vast, green expanses are the lungs of our planet, the cradle of biodiversity, and a vital source of life. Forests are not just collections of trees; they are complex ecosystems that support countless species of plants, animals, and microorganisms, many of which cannot survive anywhere else.
+
+        </p>
+        <a href="#">READ MORE</a>
+    </div>
+    <div class="grid-text">
+        <img src="img2.jpg" alt="Forest Image">
+    </div>
+
+    <div class="grid-text">
+        <img src="rock4.jpg" alt="Ocean Conservation Image">
+    </div>
+    <div class="grid-text">
+        <h2>Nature's Shaping Force</h2>
+        <p>Sand is often overlooked, yet it plays a fundamental role in shaping our world and our daily lives. From the vast deserts that stretch across continents to the serene shores where oceans meet land, sand is a symbol of both endurance and transformation, reminding us of nature's incredible ability to shape and be shaped.</p>
+        <a href="#">READ MORE</a>
+    </div>
+</div>
+
+</section>
+
+
+    <div class="heading">
+        <h1>Beautiful of nature</h1>
+    </div>
+
+
+    <div class="img">
+        <div class="grid-main">
+          <div class="card" onclick="this.classList.toggle('active')">
+            <div class="card-class">
+              <div class="card-header">learn more</div>
+              <div class="card-details">
+                <p>Nature's beauty is an endless source of inspiration and wonder.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card2" onclick="this.classList.toggle('active')">
+            <div class="card-class">
+              <div class="card-header">learn more</div>
+              <div class="card-details">
+                <p>From the vast oceans to the towering mountains,</p>
+              </div>
+            </div>
+          </div>
+          <div class="card3" onclick="this.classList.toggle('active')">
+            <div class="card-class">
+              <div class="card-header">learn more</div>
+              <div class="card-details">
+                <p>The beauty of nature is not just in its appearance, but in the way it makes us feel </p>
+              </div>
+            </div>
+          </div>
+          <div class="card4" onclick="this.classList.toggle('active')">
+            <div class="card-class">
+              <div class="card-header">learn more</div>
+              <div class="card-details">
+                <p> beauty can continue to inspire and uplift us for generations to come.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card5" onclick="this.classList.toggle('active')">
+            <div class="card-class">
+              <div class="card-header">learn more</div>
+              <div class="card-details">
+                <p>There is something truly magical about the beauty of nature.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card6" onclick="this.classList.toggle('active')">
+            <div class="card-class">
+              <div class="card-header">learn more</div>
+              <div class="card-details">
+                <p> These moments, often fleeting, remind us of the simple yet profound elegance that nature offers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="nature" id="Pages">
+        <h1>Nature At Your Fingertips</h1>
+        <div class="grid-margin">
+            <div class="grid-top">
+                <img src="https://img.icons8.com/ios-filled/60/4CAF50/todo-list.png" alt="Keep Track Icon">
+                <div>
+                    <h2>Keep Track</h2>
+                    <p>Record your encounters with other organisms and maintain life lists, all in the cloud.</p>
+                </div>
+            </div>
+            <div class="grid-top">
+                <img src="https://img.icons8.com/ios-filled/60/4CAF50/combo-chart.png" alt="Create Useful Data Icon">
+                <div>
+                    <h2>Create Useful Data</h2>
+                    <p>Help scientists and resource managers understand when and where organisms occur.</p>
+                </div>
+            </div>
+            <div class="grid-top">
+                <img src="https://img.icons8.com/ios-filled/60/4CAF50/conference-call.png" alt="Crowdsource Identifications Icon">
+                <div>
+                    <h2>Crowdsource Identifications</h2>
+                    <p>Connect with experts who can identify the organisms you observe.</p>
+                </div>
+            </div>
+            <div class="grid-top">
+                <img src="https://img.icons8.com/ios-filled/60/4CAF50/microscope.png" alt="Citizen Scientist Icon">
+                <div>
+                    <h2>Become a Citizen Scientist</h2>
+                    <p>Find a project with a mission that interests you, or start your own.</p>
+                </div>
+            </div>
+            <div class="grid-top">
+                <img src="https://img.icons8.com/ios-filled/60/4CAF50/owl.png" alt="Learn About Nature Icon">
+                <div>
+                    <h2>Learn About Nature</h2>
+                    <p>Build your knowledge by talking with other naturalists and helping others.</p>
+                </div>
+            </div>
+            <div class="grid-top">
+                <img src="https://img.icons8.com/ios-filled/60/4CAF50/megaphone.png" alt="Run a Bioblitz Icon">
+                <div>
+                    <h2>Run a Bioblitz</h2>
+                    <p>Hold an event where people try to find as many species as possible.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    
+    <div class="heading">
+        <h1>Harvest in nature</h1>
+    </div>
+        
+    <div class="image-card" id="Galleries">
+        <div class="grid-right">
+            <div class="top">
+                <img src="free.jpg" alt="Image 1">
+            </div>
+            <div class="top">
+                <img src="forest2.jpg" alt="Image 2">
+
+            </div>
+            <div class="top">
+                <img src="forest3.jpg" alt="Image 3">
+            </div>
+            <div class="top">
+                <img src="forest6.jpg" alt="Image 4">
+            </div>
+            <div class="top">
+                <img src="forest4.jpg" alt="Image 4">
+            </div>
+            <div class="top">
+                <img src="free1.jpg" alt="Image 4">
+            </div>
+        </div>
+    </div>
+
+    
+      <div class="white" id="Contact"> 
+        <div class="video-grid">
+            <div class="contact-form">
+                <h1>Contact Us</h1>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="video-section">
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="content23">
+    </div>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-item item1">
+                <h3>About Us</h3>
+                <p>We capture moments and tell stories through our lens. Learn more about our mission and values.</p>
+            </div>
+            <div class="footer-item item2">
+                <h3>Gallery</h3>
+                <ul>
+                    <li><a href="#">Portraits</a></li>
+                    <li><a href="#">Landscapes</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Nature</a></li>
+                </ul>
+            </div>
+            <div class="footer-item item3">
+                <h3>Contact</h3>
+                <p>Email: contact@photography.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p><a href="#">Contact Form</a></p>
+            </div>
+            <div class="footer-item item4">
+                <h3>Follow Us</h3>
+                <p>
+                    <a href="#">Facebook</a> 
+                    <a href="#">Instagram</a> 
+                    <a href="#">Twitter</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
